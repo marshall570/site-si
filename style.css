@@ -186,26 +186,28 @@ header > a {
   width: 100%;
 }
 
-.artigos li,
-.aulas li {
-  list-style: none;
+.artigos a,
+.aulas a {
   background-color: #ffffff;
   padding: 2rem;
   width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0.2vh 0.2vh 0.2vh 0vh rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.15rem;
+  color: #5f67af;
+  transition: 0.5s;
 }
 
-.artigos li:not(:last-child),
-.aulas li:not(:last-child) {
+.artigos a:not(:last-child),
+.aulas a:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.artigos a,
-.aulas a {
-  text-decoration: none;
-  font-size: 1.15rem;
-  color: #5f67af;
+.artigos a:hover,
+.aulas a:hover {
+  filter: brightness(75%);
 }
 
 .links {
@@ -259,4 +261,82 @@ footer {
 footer > a {
   text-decoration: none;
   color: #2b2b2b;
+}
+
+@media only screen and (orientation: portrait) {
+  header {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner img {
+    max-width: 90%;
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .objetivo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .labeled-text {
+    width: 100%;
+  }
+
+  .labeled-text:last-child {
+    margin-top: 2rem;
+  }
+
+  .labeled-text h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .book-row {
+    flex-direction: column;
+    padding: 0rem;
+  }
+
+  .book-row:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .book {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .links ul {
+    width: 100%;
+  }
+
+  .links ul:not(:last-child) {
+    margin-bottom: 2.2rem;
+  }
+
+  .bibliografia h2,
+  .modulo h2,
+  .artigos h2,
+  .aulas h2 {
+    text-align: center;
+  }
+
+  .bibliografia p,
+  .modulo p,
+  .artigos p,
+  .aulas p {
+    text-align: center;
+  }
 }
