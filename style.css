@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Work Sans", Nunito,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: #faf4fc;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+header > a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: Nunito;
+  color: #5f67af;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3rem;
+}
+
+.banner img {
+  max-width: 25%;
+  margin-left: 3rem;
+  box-shadow: 0.5vh 0.5vh 0.75vh 0vh rgba(0, 0, 0, 0.25);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 75%;
+}
+
+.text h1 {
+  font-size: 3.25rem;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+.text h2 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.text a {
+  color: #82357d;
+  text-decoration: none;
+}
+
+.text i {
+  color: #5f67af;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.objetivo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 3rem;
+  width: 100%;
+}
+
+.labeled-text {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+.labeled-text h2 {
+  font-family: Nunito;
+  font-size: 2rem;
+  /* text-decoration: underline; */
+  color: #82357d;
+  margin-bottom: 1.25rem;
+}
+
+.labeled-text p {
+  font-size: 1.25rem;
+  color: #2b2b2b;
+  text-align: justify;
+}
+
+.bibliografia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+}
+
+.bibliografia h2,
+.modulo h2,
+.artigos h2,
+.aulas h2 {
+  font-family: Nunito;
+  font-size: 2rem;
+  color: #82357d;
+  margin-bottom: 1.25rem;
+}
+
+.book-row {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.book-row:not(:last-of-type) {
+  margin-bottom: 2.5rem;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 33%;
+}
+
+.book a > img {
+  max-width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.book p {
+  font-size: 0.75rem;
+  text-align: center;
+  max-inline-size: 200px;
+  color: #2b2b2b;
+}
+
+.modulo,
+.artigos,
+.aulas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modulo p,
+.artigos p,
+.aulas p {
+  font-size: 1.2rem;
+  color: #2b2b2b;
+  margin-bottom: 2.5rem;
+}
+
+.artigos ul,
+.aulas ul {
+  list-style: none;
+  width: 100%;
+}
+
+.artigos a,
+.aulas a {
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0.2vh 0.2vh 0.2vh 0vh rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.15rem;
+  color: #5f67af;
+  transition: 0.5s;
+}
+
+.artigos a:not(:last-child),
+.aulas a:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.artigos a:hover,
+.aulas a:hover {
+  filter: brightness(75%);
+}
+
+.links {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.links ul {
+  list-style: none;
+  background-color: #ffffff;
+  padding: 1rem;
+  width: 23%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 0.2vh 0.2vh 0.5vh 0vh rgba(0, 0, 0, 0.25);
+}
+
+.links li {
+  text-align: center;
+}
+
+.links li:not(:last-child) {
+  margin-bottom: 1.1rem;
+}
+
+.links a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #5f67af;
+}
+
+.system-type {
+  font-size: 1.6rem;
+  font-family: Nunito;
+  font-weight: bold;
+  text-align: center;
+  color: #82357d;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  font-size: 0.75rem;
+}
+
+footer > a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+@media only screen and (orientation: portrait) {
+  header {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner img {
+    max-width: 90%;
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .objetivo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .labeled-text {
+    width: 100%;
+  }
+
+  .labeled-text:last-child {
+    margin-top: 2rem;
+  }
+
+  .labeled-text h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .book-row {
+    flex-direction: column;
+    padding: 0rem;
+  }
+
+  .book-row:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .book {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .links ul {
+    width: 100%;
+  }
+
+  .links ul:not(:last-child) {
+    margin-bottom: 2.2rem;
+  }
+
+  .bibliografia h2,
+  .modulo h2,
+  .artigos h2,
+  .aulas h2 {
+    text-align: center;
+  }
+
+  .bibliografia p,
+  .modulo p,
+  .artigos p,
+  .aulas p {
+    text-align: center;
+  }
+}
